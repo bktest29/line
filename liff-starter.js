@@ -15,7 +15,7 @@ function initializeApp(data) {
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
-            url: 'https://line.me'
+            url: 'line://ti/p/~thpays'
         });
     });
 
@@ -28,7 +28,7 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
             type: 'text',
-            text: "You've successfully sent a message! Hooray!"
+            text: "ส่งข้อความได้เลยนะครับ ^_^"
         }, {
             type: 'sticker',
             packageId: '2',
