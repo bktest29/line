@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +12,16 @@
     <div class="buttongroup">
         <div class="buttonrow">
             <button id="openwindowbutton">แอทเพื่อน</button>
-            <button id="closewindowbutton">ปิดหน้าต่าง</button>
+            <button id="closewindowbutton">ปิด windows</button>
         </div>
         <div class="buttonrow">
-            <button id="getaccesstoken">ดึงโทเคน</button>
-            <button id="getprofilebutton">เรียกดูข้อมูล</button>
+            <button id="getaccesstoken">ดูโทเคนของคุณ</button>
+            <button id="getprofilebutton">ดูโปรไฟล์</button>
         </div>
     </div>
 
     <div id="accesstokendata">
-        <h2>โทเคน</h2>
+        <h2>โทเคนของคุณ</h2>
         <a href="#" onclick="toggleAccessToken()">Close Access Token</a>
         <table border="1">
             <tr>
@@ -31,43 +32,51 @@
     </div>
 
     <div id="profileinfo">
-        <h2>โปรไฟล์</h2>
+        <h2>Profile</h2>
         <a href="#" onclick="toggleProfileData()">Close Profile</a>
         <div id="profilepicturediv">
         </div>
         <table border="1">
             <tr>
-                <th>ยูเซอร์ไอดี:</th>
+                <th>ยูเซอร์ไอดี</th>
                 <td id="useridprofilefield"></td>
             </tr>
             <tr>
-                <th>ชื่อที่แสดง</th>
+                <th>ชื่อ</th>
                 <td id="displaynamefield"></td>
             </tr>
             <tr>
-                <th>ข้อความสถานะ</th>
+                <th>สเตตัส</th>
                 <td id="statusmessagefield"></td>
             </tr>
         </table>
     </div>
 
     <div id="liffdata">
-        <h2>ข้อมูลของคุณ</h2>
+        <h2>LIFF Data</h2>
         <table border="1">
             <tr>
-                <th>ภาษาที่ใช้</th>
+                <th>ภาษา</th>
                 <td id="languagefield"></td>
             </tr>
             <tr>
-                <th>ข้อความไอดี</th>
+                <th>context.viewType</th>
+                <td id="viewtypefield"></td>
+            </tr>
+            <tr>
+                <th>context.userId</th>
                 <td id="useridfield"></td>
             </tr>
             <tr>
-                <th>ไอดีกลุ่ม</th>
+                <th>context.utouId</th>
+                <td id="utouidfield"></td>
+            </tr>
+            <tr>
+                <th>context.roomId</th>
                 <td id="roomidfield"></td>
             </tr>
             <tr>
-                <th>ข้อความไอดีกลุ่ม</th>
+                <th>context.groupId</th>
                 <td id="groupidfield"></td>
             </tr>
         </table>
