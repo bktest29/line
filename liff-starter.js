@@ -27,8 +27,72 @@ function initializeApp(data) {
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
-            type: 'text',
-            text: "ส่งข้อความได้เลยนะครับ ^_^"
+            
+            "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "direction": "ltr",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ส่วนหัว",
+          "align": "center"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://sv1.picz.in.th/images/2019/08/28/ZjKhID.jpg",
+      "size": "full",
+      "aspectRatio": "1:1",
+      "aspectMode": "cover"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ข้อความตรงกลาง",
+          "align": "center",
+          "wrap": true
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "เพิ่มเพื่อน",
+            "uri": "https://linecorp.com"
+          },
+          "color": "#F79900",
+          "style": "link"
+        }
+      ]
+    },
+    "styles": {
+      "header": {
+        "backgroundColor": "#FFFFFF"
+      },
+      "body": {
+        "backgroundColor": "#FDFDFD"
+      },
+      "footer": {
+        "backgroundColor": "#000000"
+      }
+    }
+  }
+            
+            
         }, {
             type: 'sticker',
             packageId: '2',
